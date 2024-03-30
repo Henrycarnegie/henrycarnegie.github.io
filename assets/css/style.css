@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background: #16161a;
+    --text-header: #fffffe;
+    --paragraph: #94a1b2;
+    --button: #7f5af0;
+    --button-text: #fffffe;
+    --white: #fffffe;
+    --tertiary-green: #2cb67d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+ul li {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--paragraph);
+}
+
+section {
+    margin: 150px 0px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--paragraph);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+
+header nav ul {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+header nav ul li a {
+    --c:linear-gradient(var(--tertiary-green) 0 0); /* update the color here */
+  
+    padding-bottom: .2em;
+    background: var(--c), var(--c);
+    background-size: 0em .1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: .3s linear, background-size .3s .2s linear;
+}
+
+header nav ul li a:hover {
+    color: var(--tertiary-green);
+    background-size: 40% .15em;
+    background-position: 10% 100%, 90% 100%;
+}
+
+/* Main Content */
+
+.main-content .text-content span {
+    color: var(--tertiary-green);
+    letter-spacing: 2px;
+}
+
+.main-content .text-content h1 {
+    font-size: 68px;
+    padding: 16px 0px;
+}
+
+.main-content .text-content h5 {
+    font-size: 18px;
+}
+
+.main-content img {
+    border-radius: 10%;
+    box-shadow: 20px 15px 30px -5px var(--tertiary-green);
+    transition: all .5s ease-in-out;
+}
+
+.main-content img:hover {
+    transform: scale(1.05);
+
+}
+
+.main-content .btn-container a .btn {
+    border-color: var(--button);
+    background-color: var(--button);
+    color: var(--button-text);
+    backdrop-filter: blur(15px);
+    transition: background-color 0.3s ease;
+}
+
+/* About */
+
+section.about .content {
+    margin-bottom: 100px;
+}
+
+.about .content h1 {
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    width: 5%;
+    border-bottom: 2px solid var(--tertiary-green);
+    margin-bottom: 30px;
+}
+
+.about .content .text-content h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.about .content .years {
+    border-radius: 15px;
+    border: 1px solid rgba(95, 95, 95, 0.34);
+    background: linear-gradient(98deg, rgba(79, 196, 207, 0.19) 2.74%, rgba(40, 99, 105, 0.10) 100%);
+    box-shadow: 0px -1px 30px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(22.5px);
+}
+
+.about .content .education ul li {
+    list-style: circle ;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--paragraph);
+
+}
+
+.about .content .education ul li span{
+    padding-left: 16px;
+    font-size: 15px;
+    color: var(--tertiary-green);
+}
+
+.about .content .education .years {
+    max-width: 160px;
+    width: fit-content;
+    padding: 12px;
+    margin: 16px 0px;
+}
+
+.about .content .education .years h6 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about .content .id-card img {
+    transition: all .5s ease-in-out;
+}
+
+.about .content .id-card img:hover {
+    transform: rotate(30deg);
+}
+
+/* About - Skill */
+.about .skill h3 { 
+    text-shadow: 
+    0 0 5px #fff, 
+    0 0 10px #fff, 
+    0 0 15px #fff, 
+    0 0 20px #fff, 
+    0 0 25px #fff, 
+    0 0 30px #fff, 
+    0 0 35px #fff, 
+    0 0 40px #fff,
+    0 0 45px #fff,
+    0 0 50px #fff,
+    0 0 55px #fff,
+    0 0 60px #fff;
+}
+
+.about .skill .personal .items .item,
+.about .skill .technical .items .item {
+    padding: 20px 20px;
+    border: 2px solid var(--button);
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    transition: all .5s ease-in-out;
+}
+
+.about .skill .personal .items .item:hover,
+.about .skill .technical .items .item:hover {
+    background-color: var(--button);
+    color: var(--white);
+}
+
+/* Portfolio */
+
+section.portfolio {
+    padding-top: 150px;
+}
+
+section.portfolio .container-portfolio{
+    border-radius: 50px;
+    border: 1px solid rgba(184, 184, 184, 0.25);
+    background: linear-gradient(122deg, rgba(255, 255, 255, 0.10) 4.18%, rgba(255, 255, 255, 0.05) 91.17%);
+    box-shadow: 0px 0px 110px 30px rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(20px);
+}
+
+.portfolio h1 {
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    border-bottom: 2px solid var(--tertiary-green);
+}
+
+.portfolio .item .card {
+    border-radius: 20px;
+}
+
+.portfolio .item h5 {
+    color: var(--tertiary-green);
+    font-weight: 600;
+}
+
+.portfolio .item img {
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.portfolio .item a {
+    background-color: var(--button);
+    color: var(--paragraph);
+    font-weight: 600;
+}
+
+/* Contact */
+
+section.contact h1 {
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    border-bottom: 2px solid var(--tertiary-green);
+}
+
+section.contact .items form button {
+    background-color: var(--button);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+}
