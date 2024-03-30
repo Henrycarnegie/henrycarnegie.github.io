@@ -18,12 +18,12 @@
     font-family: 'Poppins',sans-serif;
 }
 
-ul li {
+li {
     list-style: none;
     padding: 0px 10px;
 }
 
-ul li a {
+a {
     text-decoration: none;
     color: var(--paragraph);
 }
@@ -52,6 +52,10 @@ body {
 }
 
 /* Header */
+
+header {
+    background-color: var(--background);
+}
 
 header nav ul {
     display: flex;
@@ -111,6 +115,26 @@ header nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
+.main-content .socmed {
+    padding: 16px 0px;
+}
+
+.main-content .socmed a {
+    padding: 14px 18px 12px;
+    border: 1px solid var(--paragraph);
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
+
+.main-content .socmed a:hover {
+    background-color: var(--tertiary-green);
+    color: var(--text-header);
+}
+
+.main-content .socmed i {
+    font-size: 22px;
+}
+
 /* About */
 
 section.about .content {
@@ -124,6 +148,7 @@ section.about .content {
     width: 5%;
     border-bottom: 2px solid var(--tertiary-green);
     margin-bottom: 30px;
+    color: var(--text-header);
 }
 
 .about .content .text-content h3 {
@@ -225,6 +250,7 @@ section.portfolio .container-portfolio{
     font-weight: 800;
     letter-spacing: 3px;
     border-bottom: 2px solid var(--tertiary-green);
+    color: var(--text-header);
 }
 
 .portfolio .item .card {
@@ -255,6 +281,7 @@ section.contact h1 {
     font-weight: 800;
     letter-spacing: 3px;
     border-bottom: 2px solid var(--tertiary-green);
+    color: var(--text-header);
 }
 
 section.contact .items form button {
